@@ -4,6 +4,15 @@ jQuery(function () {
     getMovies(movieName);
     e.preventDefault();
   });
+
+  $('#btn-search-movie').on('click', (e) => {
+    let movieName = $('#searchText').val();
+    if (movieName) {
+      getMovies(movieName);
+      e.preventDefault();
+    }
+  })
+
 })
 
 function getMovies(movieName) {

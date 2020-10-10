@@ -22,17 +22,21 @@
             <form id="searchForm">
                 <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
             </form>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-primary" id="btn-search-movie">Search Movies</button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div id="movies" class="row"></div>
-    </div>
+        <div class="container">
+            <div id="movies" class="row"></div>
+        </div>
 
-    <script src="node_modules\jquery\dist\jquery.min.js"></script>
-    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
-    <script src="node_modules\axios\dist\axios.min.js"></script>
-    <script src="public/js/movies.js"></script>
+        <script src="node_modules\jquery\dist\jquery.min.js"></script>
+        <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+        <script src="node_modules\axios\dist\axios.min.js"></script>
+        <script src="public/js/movies.js"></script>
 
 </body>
 
