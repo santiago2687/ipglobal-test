@@ -2,16 +2,21 @@
 
 namespace App\classes;
 
+use InvalidArgumentException;
+
 class CurlApi
 {
 
     public function CurlRequest($url)
-    {
+    {   
+        if ($url == NULL) throw new InvalidArgumentException("The fuction not allow NULL values");
+        if ($url == "")  throw new InvalidArgumentException("The fuction not allow empty string");
+        if (is_numeric($url))  throw new InvalidArgumentException("The fuction not allow numeric values");
+
         $ch = curl_init();
         $headers = array(
             'Accept: application/json',
             'Content-Type: application/json',
-
         );
 
         curl_setopt($ch, CURLOPT_URL, $url);

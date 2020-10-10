@@ -16,4 +16,10 @@ To install correctly this app you must:
 2) Run NPM install
 3) Just in case, run "composer dump-autoload" too.
 
+UnitTest:
+
+To Run correctly the PHP Unit Test you must run the following command in the root of the project in prompt terminal:
+
+Command: vendor\bin\phpunit app/tests
+
 For any problem to mount this app please send an email to santiago2687@gmail.com
